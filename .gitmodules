@@ -1,0 +1,3 @@
+[submodule "src/vrchatApi"]
+	path = src/vrchatApi
+	url = https://github.com/aiya000/typescript-vrchat-api
