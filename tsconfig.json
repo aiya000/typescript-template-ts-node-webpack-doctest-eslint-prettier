@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "target": "ES5",
+    "module": "ES2015",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "outDir": "lib",
     "sourceMap": true,
     "strict": true,
-    "target": "ES2019",
     "baseUrl": ".",  // for ts-node
   },
   "compileOnSave": true,

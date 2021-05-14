@@ -4,6 +4,9 @@
   "description": "TODO",
   "main": "index.js",
   "scripts": {
+    "start": "yarn build && node ./dist/main.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
     "lint": "yarn prettier && yarn eslint && yarn stylelint",
     "eslint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "prettier": "prettier --check '{components,content,layouts,pages,data,types,store,test,plugins,middleware}/**/*.{ts,js,vue}' --write",
@@ -34,8 +37,10 @@
     "jest": "^26.6.3",
     "prettier": "^2.3.0",
     "ts-jest": "^26.5.6",
+    "ts-loader": "^9.1.2",
     "tsconfig-paths": "^3.9.0",
     "tsdoc-testify": "^0.0.3",
-    "webpack": "^5.37.0"
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
   }
 }
